@@ -17,77 +17,172 @@
     <header>
       <h3>everything is about me. a beginner developer.</h3>
       <h1><span>the</span> maker of things</h1>
-      <nav>
-        <ul>
-          <li class="border" id="default">
-            <a href="#home" class="click" onclick="openPage('home')">Home</a>
-          </li>
-          <li>
-            <a href="#project" class="click" onclick="openPage('project')"
-              >Project</a
-            >
-          </li>
-          <li class="border">
-            <a href="#about" class="click" onclick="openPage('about')">About</a>
-          </li>
-          <li><a href="#hobby" class="click">Hobby</a></li>
-          <li class="border social-media">
-            <a href="" class="click"
-              ><img src="./asset/facebook.svg" alt="facebook"
-            /></a>
-            <a href="#about" class="click"
-              ><img src="./asset/instagram.svg" alt="instagram"
-            /></a>
-            <a href="#about" class="click"
-              ><img src="./asset/github.svg" alt="github" />
-            </a>
-            <a href="#about" class="click"
-              ><img src="./asset/linkedin.svg" alt="linkedin"
-            /></a>
-          </li>
-        </ul>
-      </nav>
     </header>
+    <nav>
+      <ul>
+        <li class="border" id="default">
+          <a href="#home" class="click" onclick="openPage('home')">Home</a>
+        </li>
+        <li>
+          <a href="#project" class="click" onclick="openPage('project')"
+            >Project</a
+          >
+        </li>
+        <li class="border">
+          <a href="#about" class="click" onclick="openPage('about')">About</a>
+        </li>
+        <li><a href="#hobby" class="click">Hobby</a></li>
+        <li class="border social-media">
+          <a href="" class="click"
+            ><img src="./asset/facebook.svg" alt="facebook"
+          /></a>
+          <a href="#about" class="click"
+            ><img src="./asset/instagram.svg" alt="instagram"
+          /></a>
+          <a href="#about" class="click"
+            ><img src="./asset/github.svg" alt="github" />
+          </a>
+          <a href="#about" class="click"
+            ><img src="./asset/linkedin.svg" alt="linkedin"
+          /></a>
+        </li>
+      </ul>
+    </nav>
     <main>
       <article id="home" class="content active">
         <div class="container">
           <h1>Home</h1>
           <div class="batas"></div>
           <div class="image-container">
-            <img src="./asset/home.jpg" alt="home" />
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
-              accusamus minima beatae dolor, quo rem! Autem dicta officiis optio
-              numquam placeat quo. Illo officia blanditiis, consequuntur quis
-              est laudantium enim!
-            </p>
+            <img src="./asset/laptop.jpg" alt="home" />
+            <div class="description">
+              <h3>Hi and Welcome</h3>
+              <p>
+                This is my first website i build from scratch with only HTML CSS
+                and a few javascript code. this theme is inspired by one of
+                theme at wix website template.
+              </p>
+            </div>
           </div>
+        </div>
+
+        <section class="contain-two">
+          <h1>Anything you want know about me</h1>
+        </section>
+
+        <section class="contain-three">
+          <div class="boxs">
+            <h1>My Projects</h1>
+            <!-- box1 -->
+            <div class="box">
+              <img src="./asset/web-dasar.jpg" alt="web-dasar" />
+              <div class="description">
+                <p>Jun 14, 2022</p>
+                <h3>my first pratice at dicoding about basic HTML CSS</h3>
+                <p>
+                  Dicoding is a platform learning online that comprises of
+                  technology and education where i pratice new skill about
+                  programing. in this case i learn about basic web programing
+                  and used HTML and CSS to build this...
+                </p>
+              </div>
+            </div>
+            <!-- end box1 -->
+            <!-- box2 -->
+            <div class="box">
+              <img src="./asset/calculator basic.jpg" alt="calculator" />
+              <div class="description">
+                <p>Jun 19, 2022</p>
+                <h3>Basic Calculator with Javascript</h3>
+                <p>
+                  In this lesson i pratice to create a calculator with
+                  Javascript programing language. that calculator only can do
+                  addtion and subtration. and the result of calculate will show
+                  up with local storage of Javascript.
+                </p>
+              </div>
+            </div>
+            <!-- end box2 -->
+          </div>
+          <!-- end boxes -->
+          <!-- aside -->
+          <aside>
+            <h1>About Me</h1>
+            <div class="box-image">
+              <img src="./asset/person.png" alt="profil" class="profil" />
+            </div>
+            <div class="description">
+              <p>
+                Halo my name is I Wayan Ari Sabar Subakti, and i am a
+                profesional web developer (soon).
+                <a href="#about" class="click" onclick="openPage('about')"
+                  >Read More</a
+                >
+
+                <!-- I live in Bali and do as
+                programing since 2015 but still can't do programing. but now i
+                am back with new journey and spirit to become profesional at
+                developer world -->
+              </p>
+            </div>
+          </aside>
+        </section>
+      </article>
+
+      <article id="project" class="content">
+        <div class="project-container">
+          <h1>My Projects</h1>
+
+          <div class="box-project">
+            <!-- box1 -->
+            <div class="project">
+              <img src="./asset/web-dasar.jpg" alt="web-dasar" />
+              <div class="description">
+                <p>Jun 14, 2022</p>
+                <h3>my first pratice at dicoding about basic HTML CSS</h3>
+                <p>
+                  Dicoding is a platform learning online that comprises of
+                  technology and education where i pratice new skill about
+                  programing. in this case i learn about basic web programing
+                  and used HTML and CSS to build this...
+                </p>
+              </div>
+            </div>
+            <!-- end box1 -->
+            <!-- box2 -->
+            <div class="project">
+              <img src="./asset/calculator basic.jpg" alt="calculator" />
+              <div class="description">
+                <p>Jun 19, 2022</p>
+                <h3>Basic Calculator with Javascript</h3>
+                <p>
+                  In this lesson i pratice to create a calculator with
+                  Javascript programing language. that calculator only can do
+                  addtion and subtration. and the result of calculate will show
+                  up with local storage of Javascript.
+                </p>
+              </div>
+            </div>
+            <!-- end box2 -->
+          </div>
+          <!-- end boxes -->
         </div>
       </article>
 
       <article id="about" class="content">
-        <div class="container">
-          <h1>About</h1>
-          <div class="batas"></div>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
-            accusamus minima beatae dolor, quo rem! Autem dicta officiis optio
-            numquam placeat quo. Illo officia blanditiis, consequuntur quis est
-            laudantium enim!
-          </p>
-        </div>
-      </article>
-
-      <article id="project" class="content">
-        <div class="container">
-          <h1>Project</h1>
-          <div class="batas"></div>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
-            accusamus minima beatae dolor, quo rem! Autem dicta officiis optio
-            numquam placeat quo. Illo officia blanditiis, consequuntur quis est
-            laudantium enim!
-          </p>
+        <div class="about-container">
+          <div class="about-image">
+            <img src="./asset/person.png" alt="profil" class="profil" />
+          </div>
+          <div class="about-des">
+            <h3>Hello Everyone!</h3>
+            <p>
+              My name is I Wayan Ari Sabar Subakti, and i am a profesional web
+              developer (soon). I live in Bali and do as programing since 2015
+              but still can't do programing. but now i am back with new journey
+              and spirit to become profesional at developer world.
+            </p>
+          </div>
         </div>
       </article>
     </main>
