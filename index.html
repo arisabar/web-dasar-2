@@ -6,72 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Latihan</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <header>
-      <h1>Biodata Diri</h1>
+      <h3>everything is about me. a beginner developer.</h3>
+      <h1><span>the</span> maker of things</h1>
       <nav>
-        <a href="#home" class="click">Home</a>
-        <a href="#project" class="click">Project</a>
-        <a href="#about" class="click">About</a>
+        <ul>
+          <li class="border" id="default">
+            <a href="#home" class="click" onclick="openPage('home')">Home</a>
+          </li>
+          <li>
+            <a href="#project" class="click" onclick="openPage('project')"
+              >Project</a
+            >
+          </li>
+          <li class="border">
+            <a href="#about" class="click" onclick="openPage('about')">About</a>
+          </li>
+          <li><a href="#hobby" class="click">Hobby</a></li>
+          <li class="border social-media">
+            <a href="" class="click"
+              ><img src="./asset/facebook.svg" alt="facebook"
+            /></a>
+            <a href="#about" class="click"
+              ><img src="./asset/instagram.svg" alt="instagram"
+            /></a>
+            <a href="#about" class="click"
+              ><img src="./asset/github.svg" alt="github" />
+            </a>
+            <a href="#about" class="click"
+              ><img src="./asset/linkedin.svg" alt="linkedin"
+            /></a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main>
-      <div class="slide-container">
-        <article id="home">
-          <aside>
-            <img id="profil" src="./image/person.png" alt="" />
-            <p>judul image</p>
-          </aside>
-          <section>
-            <h3>Home</h3>
+      <article id="home" class="content active">
+        <div class="container">
+          <h1>Home</h1>
+          <div class="batas"></div>
+          <div class="image-container">
+            <img src="./asset/home.jpg" alt="home" />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
-              nihil? Distinctio atque omnis ex porro, quasi temporibus
-              consectetur ea amet fugiat est cupiditate in cumque nulla velit
-              consequatur dignissimos voluptas voluptatibus, deleniti aliquam
-              culpa alias officia debitis. Eius libero maiores beatae enim
-              dolores dolore debitis odit aliquam modi. Assumenda, natus?
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
+              accusamus minima beatae dolor, quo rem! Autem dicta officiis optio
+              numquam placeat quo. Illo officia blanditiis, consequuntur quis
+              est laudantium enim!
             </p>
-          </section>
-        </article>
+          </div>
+        </div>
+      </article>
 
-        <article id="project">
-          <aside>
-            <img id="profil" src="./image/person.png" alt="" />
-            <p>judul image</p>
-          </aside>
-          <section>
-            <h3>Project</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
-              nihil? Distinctio atque omnis ex porro, quasi temporibus
-              consectetur ea amet fugiat est cupiditate in cumque nulla velit
-              consequatur dignissimos voluptas voluptatibus, deleniti aliquam
-              culpa alias officia debitis. Eius libero maiores beatae enim
-              dolores dolore debitis odit aliquam modi. Assumenda, natus?
-            </p>
-          </section>
-        </article>
+      <article id="about" class="content">
+        <div class="container">
+          <h1>About</h1>
+          <div class="batas"></div>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
+            accusamus minima beatae dolor, quo rem! Autem dicta officiis optio
+            numquam placeat quo. Illo officia blanditiis, consequuntur quis est
+            laudantium enim!
+          </p>
+        </div>
+      </article>
 
-        <article id="about">
-          <aside>
-            <img id="profil" src="./image/person.png" alt="" />
-            <p>judul image</p>
-          </aside>
-          <section>
-            <h3>About</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
-              nihil? Distinctio atque omnis ex porro, quasi temporibus
-              consectetur ea amet fugiat est cupiditate in cumque nulla velit
-              consequatur dignissimos voluptas voluptatibus, deleniti aliquam
-              culpa alias officia debitis. Eius libero maiores beatae enim
-              dolores dolore debitis odit aliquam modi. Assumenda, natus?
-            </p>
-          </section>
-        </article>
-      </div>
+      <article id="project" class="content">
+        <div class="container">
+          <h1>Project</h1>
+          <div class="batas"></div>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
+            accusamus minima beatae dolor, quo rem! Autem dicta officiis optio
+            numquam placeat quo. Illo officia blanditiis, consequuntur quis est
+            laudantium enim!
+          </p>
+        </div>
+      </article>
     </main>
     <footer>
       <p>copyright</p>
