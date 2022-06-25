@@ -1,9 +1,26 @@
+let url = window.location.href;
+console.log(url);
+let index = url.indexOf("#");
+if (index !== -1) {
+  let hash = url.substring(index + 1);
+  if (hash !== null) {
+    openPage(hash);
+  }
+}
+console.log(index);
 function openPage(pageName) {
   const tabContent = document.getElementsByClassName("content");
+  const navLink = document.getElementsByClassName("click");
   for (let i = 0; i < tabContent.length; i++) {
     tabContent[i].style.display = "none";
   }
-  console.log(pageName);
+  for (let i = 0; i < navLink.length; i++) {
+    navLink[i].classList.remove("active");
+  }
+  // console.log(pageName);
+  // console.log(navLink);
+  let element = document.getElementById("nav-" + pageName);
+  element.classList.add("active");
   let pages = (document.getElementById(pageName).style.display = "block");
   return pages;
 }

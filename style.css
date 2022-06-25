@@ -33,6 +33,7 @@
   --opacity-primary: 1;
   --opacity-hover: 0.5;
 }
+
 body {
   box-sizing: border-box;
   background-color: var(--background);
@@ -58,21 +59,19 @@ header h3 {
 header h1 {
   font-family: var(--font-primary);
   color: var(--color-primary);
-  margin: 20px auto 40px auto;
+  margin: 50px auto 80px auto;
   font-size: 8rem;
   text-transform: capitalize;
-  line-height: 1.6;
+  line-height: 0.8;
 }
 
-h1 span {
-  position: absolute;
+header span {
   font-size: medium;
   color: var(--color-span);
   background-color: var(--color-primary);
   text-align: center;
-  top: 40%;
-  left: 10%;
   padding: 2px;
+  vertical-align: top;
 }
 nav {
   text-align: center;
@@ -115,6 +114,7 @@ ul li .click {
 li a:hover {
   color: var(--color-hover);
   font-weight: 700;
+  transition: 0.3s ease-in-out;
 }
 
 ul .social-media {
@@ -279,13 +279,10 @@ aside h1 {
   width: 200px;
   padding: 0;
   border: var(--border-color);
+  max-height: 250px;
 }
 .box-image .profil {
-  width: 100%;
-  height: auto;
-  margin: 0;
-  object-fit: fill;
-  object-position: center;
+  max-height: 250px;
   background-color: var(--bg-profil);
 }
 
@@ -297,6 +294,14 @@ aside a:hover {
   font-weight: 700;
   color: var(--color-hover);
 }
+
+/* @media screen and (min-width: 1200px) {
+  body {
+    width: auto;
+    margin: 0 auto;
+  }
+} */
+
 /**============ Project =========== */
 .project-container {
   margin: 80px 30px;
@@ -346,12 +351,13 @@ aside a:hover {
   padding-bottom: 0;
   bottom: 0;
   border-bottom: var(--border-color);
+  max-height: 310px;
 }
 
 .about-image img {
-  width: 30%;
   bottom: 0;
   margin-bottom: 0;
+  max-height: 310px;
 }
 
 .about-des {
