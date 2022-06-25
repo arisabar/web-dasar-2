@@ -3,7 +3,7 @@ function openPage(pageName) {
   for (let i = 0; i < tabContent.length; i++) {
     tabContent[i].style.display = "none";
   }
-  console.log(tabContent);
+  console.log(pageName);
   let pages = (document.getElementById(pageName).style.display = "block");
   return pages;
 }
