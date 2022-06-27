@@ -138,6 +138,17 @@ p {
   line-height: 1.6;
 }
 
+.checkbtn {
+  font-size: 30px;
+  color: var(--color-primary);
+  float: right;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
 /**================================*/
 /**             Main               */
 /**================================*/
@@ -391,4 +402,141 @@ footer {
 
 footer p {
   font-family: var(--font-secondary);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header h3 {
+    margin: 40px auto 0 auto;
+    font-size: 0.8rem;
+    letter-spacing: 8px;
+  }
+
+  header h1 {
+    margin: 50px auto 80px auto;
+    font-size: 6rem;
+    line-height: 0.8;
+  }
+
+  nav ul li {
+    padding: 20px 30px;
+    width: 5rem;
+  }
+
+  ul li .click {
+    font-size: 15px;
+  }
+
+  ul .social-media {
+    width: 8rem;
+  }
+
+  .social-media img {
+    width: 15px;
+  }
+
+  /**============ contain-two =========== */
+  .contain-two {
+    margin-top: 4rem;
+    padding: 20px;
+  }
+
+  .contain-two h1 {
+    font-size: 2rem;
+  }
+
+  /**============ contain-three =========== */
+  .box {
+    display: block;
+    height: 75vh;
+  }
+
+  .boxs h1,
+  aside h1 {
+    font-size: 1rem;
+    letter-spacing: 5px;
+  }
+
+  aside {
+    padding-left: 2rem;
+    margin-right: 50px;
+  }
+
+  .box img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .description {
+    float: left;
+    padding: 20px;
+  }
+
+  /**============ Project =========== */
+
+  .project-container h1 {
+    font-size: 1rem;
+  }
+
+  .box-project {
+    display: block;
+  }
+
+  .project {
+    display: block;
+    margin: 30px auto;
+    width: 70vw;
+    height: 90vh;
+    margin-bottom: 30px;
+    flex-direction: column;
+  }
+  /* 
+  .project img {
+    height: 30vh;
+  } */
+}
+
+@media screen and (max-width: 767px) {
+  header h3 {
+    margin: 40px auto 0 auto;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+  }
+
+  header h1 {
+    margin: 50px auto 80px auto;
+    font-size: 5rem;
+  }
+
+  nav {
+    padding: 20px;
+    height: 5vh;
+  }
+  .checkbtn {
+    display: block;
+    background: var(--background);
+  }
+
+  nav ul {
+    position: fixed;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    background-color: var(--background);
+    text-align: center;
+    left: -100%;
+    margin-top: 0;
+  }
+
+  nav li {
+    display: block;
+    width: 100%;
+  }
+
+  li .border {
+    border: none;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
 }
